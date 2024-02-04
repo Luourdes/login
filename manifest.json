@@ -1,0 +1,31 @@
+
+{
+    "name": "Mi PWA lulis",
+    "short_name": "Registro",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#007bff",
+    "icons": [
+      {
+        "src": "/path/to/logo.png",
+        "sizes": "192x192",
+        "type":"image/png"
+      },
+      {
+        "src": "./logo.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "scope": "/",
+    "splash_pages": null,
+    "orientation": "any",
+    "serviceworker": {
+      "src": "/path/to/sw.js",
+      "scope": "/"
+    },
+    "description": "Descripción de mi PWA",
+    "lang": "es",
+    "dir": "ltr"
+  }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resultado</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body{
+        background-image: url(esta.jpg);
+    }
+    .container {
+
+        background-color: lightseagreen;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 25px;
+        opacity: 79%;
+    }
+
+</style>
+</head>
+<body>
+<div class="container mt-5">
+  <h1 >Datos seleccionados:</h1>
+  <p class="form-control" >País: <span id="paisSeleccionado"></span></p>
+  <p class="form-control">Estado: <span id="estadoSeleccionado"></span></p>
+  <p class="form-control">Municipio: <span id="municipioSeleccionado"></span></p>
+  <p class="form-control">Localidad: <span id="localidadSeleccionada"></span></p>
+</div>
+
+<script>
+document.getElementById('paisSeleccionado').textContent = localStorage.getItem('paisSeleccionado');
+document.getElementById('estadoSeleccionado').textContent = localStorage.getItem('estadoSeleccionado');
+document.getElementById('municipioSeleccionado').textContent = localStorage.getItem('municipioSeleccionado');
+document.getElementById('localidadSeleccionada').textContent = localStorage.getItem('localidadSeleccionada');
+</script>
+</body>
+</html>

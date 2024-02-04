@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body{
+        background-image: url(esta.jpg);
+    }
+    .container {
+
+        background-color: lightseagreen;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 25px;
+        opacity: 89%;
+    }
+
+</style>
+<link rel="manifest" href="manifest.json">
+
+</head>
+<body>
+   
+<div class="container text-center mt-5">
+  <h1>Selecciona tu ubicación</h1>
+  <form id="ubicacionForm">
+    <div class="form-group">
+      <label for="pais">País:</label>
+      <select id="pais" class="form-control">
+        <option value="">Selecciona un país</option>
+        <option value="Mexico">México</option>
+        <option value="EstadosUnidos">Estados Unidos</option>
+        <!-- Agregar más países aquí si es necesario -->
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="estado">Estado:</label>
+      <select id="estado" class="form-control" disabled>
+        <option value="">Selecciona un estado</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="municipio">Municipio:</label>
+      <select id="municipio" class="form-control" disabled>
+        <option value="">Selecciona un municipio</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="localidad">Localidad:</label>
+      <select id="localidad" class="form-control" disabled>
+        <option value="">Selecciona una localidad</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+  <div id="resultado" style="display: none;">
+    <h2>Datos seleccionados:</h2>
+    <p id="paisSeleccionado"></p>
+    <p id="estadoSeleccionado"></p>
+    <p id="municipioSeleccionado"></p>
+    <p id="localidadSeleccionada"></p>
+  </div>
+</div>
+<script src="datos.js"></script>
+<script src="enviardatos.js"></script>
+<script src="main"></script>
+
+</body>
+</html>
